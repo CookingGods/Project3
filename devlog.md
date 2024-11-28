@@ -31,7 +31,7 @@ So far adding the Node. java isn't too bad but the Node file implementations of 
 This session I have finished the Node file. I also starteed working on the BTreeindex.file and a Bit on the Main.  I have no idea how I will implement the BTreeIndex.file but I think going to just continue how i will regulary do the BTree,
 then add and tweak some stuff later on. 
 
-11/28/2024 12:25pm
+11/28/2024 12:25am
  a. Give your thoughts so far. Have you had new thoughts about the project since the last session?
 So far, I was coding the whole day and the BTreeIndex is 3/4 done. I now see fully the big picture on how to code this.
 I think I will try to code everything even though it may not reach the function I want. I just want so have a skeleton and then I will tweak the functions that not fully likling to what i want. Basically code the basic function and code the rest later with more full details, that way I can see where I miss and etc.
@@ -41,3 +41,15 @@ I think I will try to code everything even though it may not reach the function 
  session?
 
 This session I have finished the 3/4 of the BTreeindex file . I added B-Tree overwritting the file, opening  existing B-tree file, Read and verify the header block,  Writes the header block to the file and B- Tree node to it block, Print the entire b-tree in order, and etc. Next session I will try to add input file into the B-tree, extrac all key, and try to finish the rest of the code. 
+
+11/28/2024 5:18pm
+ a. Give your thoughts so far. Have you had new thoughts about the project since the last session?
+So far, I was coding the whole day and the BTreeIndex is now done.I am not too sure if it will have all the things I need but I feel like it should. I will continue testing and when I am done with all the file I will tweak anythings that is needed is more details. Other than that this project is coming in nicely
+
+ b. What do you plan to accomplish this session? Layout a plan, as detailed as possible. What
+ do you plan to change? What do you plan to implement next? What is your goal for this
+ session? 
+
+This session I have finished the  all of the BTreeindex file . I added input file into the B-tree, extracing  all key methods, closing the file, helpers methods and etc. Next I planning on the Main which I will add the Menu screen and a loop, and a option of the Users. This doesn't too bad but I  after that hopefully then I am finished if not I might have to readjust some of my BTree file, since majoriy of my code is there to see if I am missing anything but, Majority of the method should work or base the requirment and instruction that he gives. I mnight need to reread his instruction but everything looks good so far. It's seem like I should be able to finish this by saturday night if all things go well.
+
+
