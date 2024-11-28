@@ -256,3 +256,72 @@ class BTreeIndex {
             }
         }
     }
+
+    // Loads data from an input file into the B-tree
+    public void load(String inputFile) throws IOException {
+        try (BufferedReader reader = new BufferedReader(new FileReader(inputFile))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                try {
+                    String[] parts = line.trim().split(","); // Parse input as key,value
+                    if (parts.length != 2) {
+                        System.out.println("Skipping invalid line: " + line);
+                        continue;
+                    }
+                    long key = Long.parseLong(parts[0]);
+                    long value = Long.parseLong(parts[1]);
+                    if (key < 0 || value < 0) { // Skip negative values
+                        System.out.println("Skipping negative values: " + key + "," + value);
+                        continue;
+                    }
+                    insert(key, value); // Insert valid key-value pairs
+                } catch (NumberFormatException e) {
+                    System.out.println("Skipping invalid line: " + line); // Handle malformed input
+                }
+            }
+        }
+    }
+
+    // Extracts all key-value pairs in the B-tree to an output file
+    public void extract(String outputFile) throws IOException {
+        File f = new File(outputFile);
+        if (f.exists()) {
+            System.out.print("File " + outputFile + " exists. Overwrite? (y/n): ");
+            Scanner scanner = new Scanner(System.in);
+            String response = scanner.nextLine().toLowerCase();
+            if (!response.equals("y")) {
+                return; // Abort if user chooses not to overwrite
+            }
+        }
+
+        try (PrintWriter writer = new PrintWriter(new FileWriter(outputFile))) {
+            extractNode(rootId, writer); // Recursively write all nodes
+        }
+    }
+
+    // Helper method for recursively extracting nodes
+    private void extractNode(long nodeId, PrintWriter writer) throws IOException {
+        if (nodeId == 0) {
+            return; // Base case: no more nodes
+        }
+        Node node = readNode(nodeId);
+        for (int i = 0; i < node.numKeys; i++) { // Write keys and values
+            writer.println(node.keys[i] + "," + node.values[i]);
+        }
+        for (int i = 0; i < Node.MAX_CHILDREN; i++) { // Process child nodes
+            if (node.children[i] != 0) {
+                extractNode(node.children[i], writer);
+            }
+        }
+    }
+
+    // Closes the file to release system resources
+    public void close() throws IOException {
+        if (file != null) {
+            file.close();
+            file = null;
+        }
+    }
+}
+
+
