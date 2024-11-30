@@ -52,4 +52,14 @@ So far, I was coding the whole day and the BTreeIndex is now done.I am not too s
 
 This session I have finished the  all of the BTreeindex file . I added input file into the B-tree, extracing  all key methods, closing the file, helpers methods and etc. Next I planning on the Main which I will add the Menu screen and a loop, and a option of the Users. This doesn't too bad but I  after that hopefully then I am finished if not I might have to readjust some of my BTree file, since majoriy of my code is there to see if I am missing anything but, Majority of the method should work or base the requirment and instruction that he gives. I mnight need to reread his instruction but everything looks good so far. It's seem like I should be able to finish this by saturday night if all things go well.
 
+11/29/2024 9:35pm
+ a. Give your thoughts so far. Have you had new thoughts about the project since the last session?
+So far,  I finished the Main.java. No new thoughts I just need to recheck every method and file to make sure it have all the necessary functions. I ran it and it seemsed it does but I need to recheck it again to make sure that it works. other than that It seems to go alrigjt
+
+ b. What do you plan to accomplish this session? Layout a plan, as detailed as possible. What
+ do you plan to change? What do you plan to implement next? What is your goal for this
+ session? 
+
+Today, I finished the Main.java file, I added the catach error, and I added the menu and the fuctions for some of it, some of the menu option are in the BTreeindex file. Like load and print. Other than that tomorrow, I will just check to make sure i have all the functions and if I feel like I do I will create a Read-Me file and that will be my last update log and finished it.
+
 
