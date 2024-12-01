@@ -62,4 +62,17 @@ So far,  I finished the Main.java. No new thoughts I just need to recheck every 
 
 Today, I finished the Main.java file, I added the catach error, and I added the menu and the fuctions for some of it, some of the menu option are in the BTreeindex file. Like load and print. Other than that tomorrow, I will just check to make sure i have all the functions and if I feel like I do I will create a Read-Me file and that will be my last update log and finished it.
 
+12/1/2024 2:05am
+a. Give your thoughts so far. Have you had new thoughts about the project since the last session?
+So far,  I finished the everything No new thoughts I think i have everything right, i check the search, create, open, insert, search, quit, although, i not sure if the professor want the way how I program the extract and the search. I am glad that i finish the project before my finals start although it took half my thanksgiving break. I
+
+ b. What do you plan to accomplish this session? Layout a plan, as detailed as possible. What
+ do you plan to change? What do you plan to implement next? What is your goal for this
+ session? 
+
+Today, I finished the readme for this project and recheck all the methods and test it using mutiple use cases. I think i am going to sumbit it, tonight.
+
+
+
+
 
