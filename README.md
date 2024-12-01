@@ -65,17 +65,5 @@ The project is organized into the following files:
 
 ---
 
-#### **File Format Details**
-- **Header Block:**  
-  - 8 bytes: Magic number (`4337PRJ3`).  
-  - 8 bytes: Block ID of the root node (0 if empty).  
-  - 8 bytes: Block ID of the next free block.  
-  - Remaining bytes are unused.  
-
-- **Node Block:**  
-  - 8 bytes: Block ID of the current node.  
-  - 8 bytes: Block ID of the parent node (0 if root).  
-  - 8 bytes: Number of key-value pairs in the node.  
-  - 152 bytes: Array of up to 19 keys.  
-  - 152 bytes: Array of up to 19 values.  
-  - 160 bytes: Array of up to 20 child pointers.
+#### **Notes for TA**
+I am not sure if that is how he want my commit log to be answer but I pretty much just answered the question and the template he gived me. I would just log each time I finished a big part of the code which could take me like 2-4 hours to 2 days like the BTreeFiles. 
